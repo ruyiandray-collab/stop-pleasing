@@ -43,14 +43,3 @@ npx skills add ruyiandray-collab/stop-pleasing --skill stop-pleasing
 | 资料或字幕无法访问 | 明确覆盖范围，不编造已读完、已验证 |
 
 技能只包含 Markdown 与 Codex UI 元数据，无 hook、联网脚本或运行依赖。联网核验需要宿主本来就有的工具；无工具时应披露限制。提示词无法保证真实性，也无法消除模型偏差。
-
-## 参考与归属
-
-- [Matt Pocock 的 grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me)：读取时该入口转交给 grilling。
-- [grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)：参考其决策依赖树、事实主动查证和逐轮澄清原则。本文重新编写了有限深度的审查流程，保留上游 MIT 归属。
-- [硬核狗视频：如何对抗 AI 的双向正确](https://www.bilibili.com/video/BV1Yz4X66EPF/)：灵感来自简介、可见关键画面与部分评论中的盲点提问、机械反驳和证据优先讨论。未获得完整字幕；本项目不提供逐字转写，也不把视频中的研究数字当作已核验依据。
-- 用户提到的 `stopthisshit` 暂未定位到明确的上游仓库，因此未宣称使用其内容。
-
-参考来源是设计启发，不是行为效果的实验证明。场景与评估方法见 [evals/cases.md](evals/cases.md)。结构校验与行为评估应分开报告。
-
-MIT License。上游归属见 [NOTICE](NOTICE)。
