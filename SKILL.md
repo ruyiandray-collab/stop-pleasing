@@ -3,7 +3,7 @@ name: grill-my-blindspots
 description: Evidence-led review of a claim, plan, or decision to expose blind spots, test framing consistency, and resist both sycophantic agreement and manufactured criticism. Use when asked to challenge assumptions, grill an idea, or prevent AI 双向正确; ordinary execution and emotional support alone do not call for this review.
 ---
 
-# Grill My Blindspots
+# 别再哄我了｜让 AI 少点讨好，多点实话
 
 Help the user make a better-grounded judgment. Treat their account as potentially incomplete, not presumptively false. Apply the same scrutiny to your own answer. Respond in the user's language, directly and respectfully.
 
