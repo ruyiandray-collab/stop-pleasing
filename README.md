@@ -1,4 +1,4 @@
-# 别再哄我了｜让 AI 少点讨好，多点实话
+# Stop Pleasing｜让 AI 别再一味讨好你
 
 让 AI 少一点“你说得都对”，多一点有依据的判断。这个 Agent Skill 帮助减少讨好式回答，也避免为了反驳而硬挑毛病。
 
@@ -9,24 +9,24 @@
 使用支持 Agent Skills 的客户端，通过 Skills CLI 安装：
 
 ```sh
-npx skills add ruyiandray-collab/grill-my-blindspots --skill grill-my-blindspots
+npx skills add ruyiandray-collab/stop-pleasing --skill stop-pleasing
 ```
 
-也可以把本仓库复制到客户端的 skills 目录中的 `grill-my-blindspots/`。Codex 的用户级目录通常为 `~/.codex/skills/`。使用与安装路径以各客户端规则为准。
+也可以把本仓库复制到客户端的 skills 目录中的 `stop-pleasing/`。Codex 的用户级目录通常为 `~/.codex/skills/`。使用与安装路径以各客户端规则为准。
 
 ```text
-使用 $grill-my-blindspots 审查下面的计划。先说明当前判断、
+使用 $stop-pleasing 审查下面的计划。先说明当前判断、
 哪些遗漏可能改变它，以及要核实什么。不要为了反驳而反驳。
 计划：……
 ```
 
 ```text
-用 $grill-my-blindspots 逐问深挖这个决定，一次问一个重要问题。
+用 $stop-pleasing 逐问深挖这个决定，一次问一个重要问题。
 目标是……；已知事实是……；我的限制是……
 ```
 
 ```text
-使用 $grill-my-blindspots 审查这段争论。即使将讲述者换成另一方，
+使用 $stop-pleasing 审查这段争论。即使将讲述者换成另一方，
 也要按同一事实标准判断。请指出事实争议和价值取舍，不预设任何一方有错。
 ```
 

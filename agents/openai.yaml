@@ -1,4 +1,4 @@
 interface:
-  display_name: "别再哄我了｜让 AI 少点讨好，多点实话"
+  display_name: "Stop Pleasing｜让 AI 别再一味讨好你"
   short_description: "减少 AI 讨好式回答，依据事实指出盲点，也避免为了反驳而硬挑毛病"
-  default_prompt: "Use $grill-my-blindspots to review my decision, identify consequential blind spots, and explain what evidence would change your assessment."
+  default_prompt: "Use $stop-pleasing to review my decision, identify consequential blind spots, and explain what evidence would change your assessment."
