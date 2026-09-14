@@ -48,14 +48,3 @@ The skill responds in the user's language. Switching this README changes the doc
 | Sources or subtitles are inaccessible | State the coverage limits; never pretend to have read or verified them |
 
 The skill contains Markdown and Codex UI metadata only, with no hooks, network scripts, or runtime dependencies. Source verification uses tools already available in the host; unavailable tools must be disclosed. A prompt cannot guarantee truthfulness or eliminate model bias.
-
-## References and attribution
-
-- [Matt Pocock's grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me): this entry delegated to grilling when inspected.
-- [grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling): inspired the decision-dependency approach, active fact-finding, and iterative clarification. This project rewrites those ideas into a bounded review workflow and retains upstream MIT attribution.
-- [硬核狗视频: 如何对抗 AI 的双向正确](https://www.bilibili.com/video/BV1Yz4X66EPF/): the description, visible key frames, and some comments inspired the focus on blind spots, mechanical criticism, and evidence. A complete transcript was not obtained; this project distributes no transcript and does not treat the video's research figures as verified evidence.
-- The suggested reference `stopthisshit` could not be matched to a definite upstream repository, so no use of its content is claimed.
-
-These references inform the design; they do not demonstrate its effectiveness. See [evals/cases.md](evals/cases.md) for scenarios and evaluation guidance. Structural validation and behavioral evaluation should be reported separately.
-
-Licensed under [MIT](LICENSE). See [NOTICE](NOTICE) for upstream attribution.
