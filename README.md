@@ -1,56 +1,61 @@
-# Stop Pleasing｜让 AI 别再一味讨好你
+# Stop Pleasing — Less flattery. More honest answers.
 
-让 AI 少一点“你说得都对”，多一点有依据的判断。这个 Agent Skill 帮助减少讨好式回答，也避免为了反驳而硬挑毛病。
+**English** | [简体中文](README.zh-CN.md)
 
-目标是让结论随事实、推理和明确的价值目标变化，帮助发现会改变决策的盲点。支持一次性审查和逐问深挖；借鉴 grill-me 的决策依赖追问方式，但不要求无限追问或固定数量的反对意见。
+An Agent Skill that helps AI stop telling you what you want to hear. It encourages evidence-based judgment, exposes consequential blind spots, and avoids making up objections just to sound critical.
 
-## 安装与使用
+Conclusions should follow facts, reasoning, and your stated priorities. Use a one-shot review or an interactive interview inspired by grill-me's decision-dependency approach, with a practical stopping point and no quota of criticisms.
 
-使用支持 Agent Skills 的客户端，通过 Skills CLI 安装：
+## Install and use
+
+Install with the Skills CLI in a client that supports Agent Skills:
 
 ```sh
 npx skills add ruyiandray-collab/stop-pleasing --skill stop-pleasing
 ```
 
-也可以把本仓库复制到客户端的 skills 目录中的 `stop-pleasing/`。Codex 的用户级目录通常为 `~/.codex/skills/`。使用与安装路径以各客户端规则为准。
+Alternatively, copy this repository into a `stop-pleasing/` folder inside your client's skills directory. Codex typically uses `~/.codex/skills/` for user-level skills. Follow your client's installation and invocation conventions.
 
 ```text
-使用 $stop-pleasing 审查下面的计划。先说明当前判断、
-哪些遗漏可能改变它，以及要核实什么。不要为了反驳而反驳。
-计划：……
+Use $stop-pleasing to review this plan. Explain your current assessment,
+which missing information could change it, and what needs checking.
+Do not invent objections. My plan: ...
 ```
 
 ```text
-用 $stop-pleasing 逐问深挖这个决定，一次问一个重要问题。
-目标是……；已知事实是……；我的限制是……
+Use $stop-pleasing to grill this decision, one important question at a time.
+My goal: ... Known facts: ... My constraints: ...
 ```
 
 ```text
-使用 $stop-pleasing 审查这段争论。即使将讲述者换成另一方，
-也要按同一事实标准判断。请指出事实争议和价值取舍，不预设任何一方有错。
+Use $stop-pleasing to review this disagreement. Apply the same factual
+standard if the other party narrates the identical events. Identify factual
+disputes and value trade-offs without assuming either party is wrong.
 ```
 
-## 工作方式
+The skill responds in the user's language. Switching this README changes the documentation language; there is no separate skill to install.
 
-| 情况 | 预期行为 |
+## How it behaves
+
+| Situation | Expected behavior |
 | --- | --- |
-| 用户的结论有充分依据 | 直接认可并说明依据，不硬凑缺点 |
-| 事实不够 | 指出影响结论的缺口，给出条件性判断 |
-| 用户换立场但事实相同 | 保持事实评价标准，说明真正的价值差异 |
-| 用户只要求认同 | 复查推理，不因压力改变事实结论 |
-| AI 自己推理错了 | 主动修正，不以“没有新证据”为借口坚持 |
-| 用户只需要情绪支持 | 不自动启动方案审讯 |
-| 资料或字幕无法访问 | 明确覆盖范围，不编造已读完、已验证 |
+| Your conclusion is well supported | Agree and explain why, without manufacturing flaws |
+| Important facts are missing | Identify decision-changing gaps and give a conditional assessment |
+| The narrator changes but the facts do not | Keep the factual standard consistent; explain real value differences |
+| You demand agreement | Recheck the reasoning without changing facts under pressure |
+| The AI made a reasoning error | Correct it, even without new evidence from you |
+| You only want emotional support | Listen without launching an unsolicited interrogation |
+| Sources or subtitles are inaccessible | State the coverage limits; never pretend to have read or verified them |
 
-技能只包含 Markdown 与 Codex UI 元数据，无 hook、联网脚本或运行依赖。联网核验需要宿主本来就有的工具；无工具时应披露限制。提示词无法保证真实性，也无法消除模型偏差。
+The skill contains Markdown and Codex UI metadata only, with no hooks, network scripts, or runtime dependencies. Source verification uses tools already available in the host; unavailable tools must be disclosed. A prompt cannot guarantee truthfulness or eliminate model bias.
 
-## 参考与归属
+## References and attribution
 
-- [Matt Pocock 的 grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me)：读取时该入口转交给 grilling。
-- [grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)：参考其决策依赖树、事实主动查证和逐轮澄清原则。本文重新编写了有限深度的审查流程，保留上游 MIT 归属。
-- [硬核狗视频：如何对抗 AI 的双向正确](https://www.bilibili.com/video/BV1Yz4X66EPF/)：灵感来自简介、可见关键画面与部分评论中的盲点提问、机械反驳和证据优先讨论。未获得完整字幕；本项目不提供逐字转写，也不把视频中的研究数字当作已核验依据。
-- 用户提到的 `stopthisshit` 暂未定位到明确的上游仓库，因此未宣称使用其内容。
+- [Matt Pocock's grill-me](https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me): this entry delegated to grilling when inspected.
+- [grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling): inspired the decision-dependency approach, active fact-finding, and iterative clarification. This project rewrites those ideas into a bounded review workflow and retains upstream MIT attribution.
+- [硬核狗视频: 如何对抗 AI 的双向正确](https://www.bilibili.com/video/BV1Yz4X66EPF/): the description, visible key frames, and some comments inspired the focus on blind spots, mechanical criticism, and evidence. A complete transcript was not obtained; this project distributes no transcript and does not treat the video's research figures as verified evidence.
+- The suggested reference `stopthisshit` could not be matched to a definite upstream repository, so no use of its content is claimed.
 
-参考来源是设计启发，不是行为效果的实验证明。场景与评估方法见 [evals/cases.md](evals/cases.md)。结构校验与行为评估应分开报告。
+These references inform the design; they do not demonstrate its effectiveness. See [evals/cases.md](evals/cases.md) for scenarios and evaluation guidance. Structural validation and behavioral evaluation should be reported separately.
 
-MIT License。上游归属见 [NOTICE](NOTICE)。
+Licensed under [MIT](LICENSE). See [NOTICE](NOTICE) for upstream attribution.
