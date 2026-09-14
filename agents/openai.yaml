@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grill My Blindspots"
+  short_description: "Evidence-led review without flattery or forced criticism"
+  default_prompt: "Use $grill-my-blindspots to review my decision, identify consequential blind spots, and explain what evidence would change your assessment."
